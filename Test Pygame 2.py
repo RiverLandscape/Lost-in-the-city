@@ -30,8 +30,7 @@ print(os.path.abspath("Test_C.jpg"))
 ciutat = pygame.image.load(os.path.abspath('Test_C.jpg'))
 ciutat = pygame.transform.scale(ciutat, (800,800))
 
-
-
+################################
 
 
 
@@ -48,7 +47,7 @@ while not crashed:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             crashed = True
-
+ 
         ############################
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
@@ -68,6 +67,7 @@ while not crashed:
             if event.key == pygame.K_DOWN or event.key == pygame.K_UP:
                 y_change = 0
         print(x_change, y_change)
+
         ######################
     ##
     x += x_change
